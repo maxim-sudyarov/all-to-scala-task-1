@@ -1,4 +1,4 @@
-package org.example;
+package org.example.service;
 
 import java.time.Duration;
 import java.util.concurrent.BlockingDeque;
@@ -7,6 +7,10 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+import org.example.dto.Address;
+import org.example.dto.Event;
+import org.example.dto.Result;
+import org.example.dto.RetryEvent;
 
 public class HandlerImpl implements Handler {
     private final BlockingDeque<RetryEvent> retryQueue = new LinkedBlockingDeque<>();

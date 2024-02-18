@@ -1,8 +1,12 @@
-package org.example;
+package org.example.service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import org.example.dto.Address;
+import org.example.dto.Event;
+import org.example.dto.Payload;
+import org.example.dto.Result;
 
 public class ClientImpl implements Client {
     Random random = new Random();
